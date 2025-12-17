@@ -52,7 +52,6 @@ export default function PricingSection() {
     return (
         <section className="bg-white py-20 px-6 font-sans">
             <div className="max-w-7xl mx-auto text-center">
-             
                 <h2 className="text-black text-4xl font-black mb-2 tracking-tight uppercase">
                     Eyoha Digitals
                 </h2>
@@ -60,7 +59,6 @@ export default function PricingSection() {
                     Packages
                 </h3>
 
-             
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                     {packages.map((pkg, idx) => (
                         <PricingCard
@@ -68,7 +66,7 @@ export default function PricingSection() {
                             title={pkg.title}
                             features={pkg.features}
                             buttonText={pkg.buttonText}
-                            isFeatured={pkg.isFeatured}
+                            // isFeatured={pkg.isFeatured}
                         />
                     ))}
                 </div>

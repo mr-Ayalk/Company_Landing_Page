@@ -1,5 +1,6 @@
 "use client";
-import PricingCard from "@/components/PricingCard";
+
+import { PricingCard } from "@/components/PricingCard";
 import React, { useState } from "react";
 
 

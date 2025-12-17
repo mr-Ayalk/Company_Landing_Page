@@ -1,8 +1,8 @@
 import React from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface FeatureCardProps {
-    iconSrc: string;
+    iconSrc: string | StaticImageData | React.ReactNode; // Changed from any
     title: string;
     description: string;
 }
