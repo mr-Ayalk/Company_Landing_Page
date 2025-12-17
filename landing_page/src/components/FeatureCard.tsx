@@ -2,7 +2,8 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 
 interface FeatureCardProps {
-    iconSrc: string | StaticImageData | React.ReactNode; // Changed from any
+    // Restrict this to only valid image types
+    iconSrc: string | StaticImageData;
     title: string;
     description: string;
 }
