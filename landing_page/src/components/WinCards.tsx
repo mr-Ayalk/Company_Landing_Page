@@ -7,9 +7,9 @@ interface WinCardProps {
     metricColor: string;
     title: string;
     description: string;
-    graphicSrc: any;
+  graphicSrc: string ;
     iconBgColor: string;
-    iconSrc: any;
+    iconSrc: string;
     BottomIcon: LucideIcon; // Receives the specific icon component
 }
 

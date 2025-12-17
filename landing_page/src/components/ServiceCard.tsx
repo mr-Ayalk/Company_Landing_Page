@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image, { ImageProps } from "next/image";
 
 interface ServiceCardProps {
-    icon: any;
+    icon: string | ImageProps["src"];
     title: string;
     description: string;
     linkText: string;
