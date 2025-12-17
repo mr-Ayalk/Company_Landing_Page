@@ -1,10 +1,9 @@
-import  { StaticImageData } from "next/image"; // 1. Import StaticImageData
 import React from "react";
 
 interface ClientCardProps {
     companyName: string;
     tagline: string;
-    logo: string | StaticImageData; // 2. Update this line to accept both types
+    logo: string;
     testimonial: string;
     category: string;
 
