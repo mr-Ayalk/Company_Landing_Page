@@ -70,7 +70,7 @@ export default function PricingSection() {
                 <h2 className="text-black text-4xl font-black mb-2 tracking-tight uppercase">
                     Eyoha Digitals
                 </h2>
-                <h3 className="text-[#8B5CF6] text-5xl font-black mb-20 uppercase">
+                <h3 className="text-[#8B5CF6] text-4xl font-black mb-20 uppercase">
                     Packages
                 </h3>
 
