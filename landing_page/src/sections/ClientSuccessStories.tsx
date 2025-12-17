@@ -6,7 +6,6 @@ import tweeterImage from "../assets/images/tweeter.png";
 
 import Image from "next/image";
 
-
 const clientLogos = [
     // Outer Ring (Radius approx 225px)
     {
@@ -141,6 +140,16 @@ export default function ClientSuccessStories() {
                                 </span>
                                 <span className="text-sm text-gray-500">
                                     Satisfaction Rate
+                                </span>
+                            </div>
+                            <div className="flex flex-col">
+                                <span
+                                    className={`text-4xl font-extrabold ${purpleAccent}`}
+                                >
+                                    24/7
+                                </span>
+                                <span className="text-sm text-gray-500">
+                                    Support
                                 </span>
                             </div>
                         </div>
