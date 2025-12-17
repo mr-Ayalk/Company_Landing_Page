@@ -1,5 +1,5 @@
 import WinCard from "@/components/WinCards";
-import { TrendingUp, Rocket, ChartPie, Flame, Eye } from "lucide-react";
+import { TrendingUp, Rocket, ChartPie, Flame } from "lucide-react";
 
 import growth from "../assets/images/seoIcon.png";
 import searchIcon from "../assets/images/searchIcon.png";
