@@ -113,7 +113,7 @@ export default function ClientSection() {
                         Trusted by Industry Leaders
                     </h2>
                     <p className="max-w-2xl mx-auto text-gray-500 leading-relaxed">
-                        We've partnered with innovative companies to deliver
+                        We&apos;ve partnered with innovative companies to deliver
                         exceptional digital experiences that drive growth and
                         success.
                     </p>

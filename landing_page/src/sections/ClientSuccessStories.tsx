@@ -3,7 +3,7 @@ import EthioteleImage from "../assets/images/ethiotele.png";
 import RealStateImage from "../assets/images/realstate.png";
 import FinanceImage from "../assets/images/finance.png";
 import tweeterImage from "../assets/images/tweeter.png";
-import Link from "next/link";
+
 import Image from "next/image";
 
 
