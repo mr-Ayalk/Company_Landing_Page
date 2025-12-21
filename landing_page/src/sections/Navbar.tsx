@@ -36,7 +36,7 @@ export default function Navbar() {
     }, []);
 
     const desktopMaxWidth = "max-w-[1233px]";
-    const logoBgColor = "bg-[#6A0DAD]";
+    // const logoBgColor = "bg-[#6A0DAD]";
 
     const navbarClasses = scrolled
         ? "bg-black/30 backdrop-blur-md shadow-lg"
