@@ -51,8 +51,8 @@ export default function Navbar2() {
                             <Image
                                 src={logoImage}
                                 alt="Eyoha Digitals Logo"
-                                width={58}
-                                height={58}
+                                width={88}
+                                height={88}
                                 className="object-contain "
                             />
                         </div>
