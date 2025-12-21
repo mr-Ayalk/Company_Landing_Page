@@ -16,7 +16,7 @@ export default function Hero() {
 
     return (
         <div
-            className="relative w-full md:h-screen md:max-h-screen pt-40 md:pt-48 pb-16 md:pb-32 flex flex-col items-center justify-start overflow-hidden"
+            className="relative w-full md:h-screen md:max-h-screen pt-32 md:pt-32 pb-16 md:pb-32 flex flex-col items-center justify-start overflow-hidden"
             style={{
                 backgroundImage: `url(${backgroundImage.src})`,
                 backgroundSize: "cover",
@@ -69,7 +69,7 @@ export default function Hero() {
                     <Link href="#portfolio">
                         <button
                             className="flex items-center space-x-2 text-white text-base font-semibold px-8 w-[224.09px] max-w-[224.09px] h-[64px] rounded-lg 
-                                       border-2 border-white hover:bg-white hover:text-purple-700 transition duration-200"
+                                       border-2 border-white hover:bg-purple-700 hover:border-[#FF6600]  hover:text-white transition duration-200"
                         >
                             <span>View Our Work</span>
 
@@ -78,13 +78,13 @@ export default function Hero() {
                                 alt="Eyoha Digitals Logo"
                                 width={18}
                                 height={28}
-                                className="object-contain"
+                                className="object-contain "
                             />
                         </button>
                     </Link>
                 </div>
 
-                <div className="flex space-x-12  lg:pl-12 pt-0 ">
+                <div className="flex space-x-12  lg:pl-14 pt-0 ">
                     <div className="flex flex-col items-start">
                         <span className="text-2xl font-extrabold text-white">
                             10+
