@@ -57,6 +57,7 @@ export default function ContactSection() {
                                 </label>
                                 <input
                                     type="number"
+                                    placeholder="+2519 1234 5678"
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
                                 />
                             </div>
