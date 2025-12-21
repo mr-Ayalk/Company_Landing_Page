@@ -1,10 +1,15 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import flintstone from "../assets/images/flintstone.png";
-import ethiotele from "../assets/images/ethiotele.png";
+import galaxyfurniture from "../assets/images/galaxyfurniture.png";
+import sofifurniture from "../assets/images/sofiFerniture.png";
+import maki from "../assets/images/maki.png";
+import amin from "../assets/images/aminhospitallogo.png";
+import Skillbridge from "../assets/images/skillBridgelogo.png";
+import beltech from "../assets/images/beltechlogo.png";
 interface ClientCardProps {
     logo: string | StaticImageData;
     companyName: string;
+    subcompanyName: string;
     testimonial: string;
     category: string;
     accentColor: string;
@@ -12,35 +17,65 @@ interface ClientCardProps {
 
 const clientData: ClientCardProps[] = [
     {
-        logo: flintstone,
-        companyName: "TechFlow Solutions",
+        logo: galaxyfurniture,
+        companyName: "Galaxy Furniture",
+        subcompanyName: "Interior and Furniture",
         testimonial:
             '"Exceptional digital transformation that increased our conversion rate by 340%"',
         category: "E-commerce Platform",
         accentColor: "orange",
     },
     {
-        logo: flintstone,
-        companyName: "FinanceCore Group",
+        logo: sofifurniture,
+        companyName: "Safe Furniture",
+        subcompanyName: "Interior and Furniture",
         testimonial:
             '"Outstanding mobile app development that revolutionized our customer experience"',
         category: "Mobile Banking App",
         accentColor: "purple",
     },
     {
-        logo: ethiotele,
-        companyName: "FinanceCore Group",
+        logo: maki,
+        companyName: "Maki Interior Design",
+        subcompanyName: "Interior and Furniture",
         testimonial:
             '"Outstanding mobile app development that revolutionized our customer experience"',
         category: "Mobile Banking App",
         accentColor: "purple",
     },
-    // Add other 4 items here to match the 2x3 grid...
+    {
+        logo: amin,
+        companyName: "Amin Hospital",
+        subcompanyName: "Healthcare Services",
+        testimonial:
+            '"Exceptional digital transformation that increased our conversion rate by 340%"',
+        category: "E-commerce Platform",
+        accentColor: "orange",
+    },
+    {
+        logo: Skillbridge,
+        companyName: "Skillbridge Institute of Technology",
+        subcompanyName: "Education",
+        testimonial:
+            '"Exceptional digital transformation that increased our conversion rate by 340%"',
+        category: "E-commerce Platform",
+        accentColor: "orange",
+    },
+    {
+        logo: beltech,
+        companyName: "Beitech Solutions",
+        subcompanyName: "Education",
+        testimonial:
+            '"Exceptional digital transformation that increased our conversion rate by 340%"',
+        category: "E-commerce Platform",
+        accentColor: "orange",
+    },
 ];
 
 const ClientCard = ({
     logo,
     companyName,
+    subcompanyName,
     testimonial,
     category,
     accentColor,
@@ -60,7 +95,7 @@ const ClientCard = ({
                         src={logo}
                         alt={companyName}
                         fill
-                        className="object-contain p-2"
+                        className="object-contain rounded-full"
                     />
                 </div>
             </div>
@@ -74,7 +109,7 @@ const ClientCard = ({
                 {companyName}
             </h3>
             <p className="text-gray-400 text-sm mb-6 font-medium">
-                {companyName}
+                {subcompanyName}
             </p>
 
             <p className="text-gray-500 text-sm leading-relaxed italic mb-8 px-4">
@@ -120,7 +155,7 @@ export default function ClientSection() {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-                    {[...clientData, ...clientData].map((client, idx) => (
+                    {[...clientData].map((client, idx) => (
                         <ClientCard key={idx} {...client} />
                     ))}
                 </div>
