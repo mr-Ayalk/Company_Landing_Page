@@ -7,14 +7,6 @@ import service1Image5 from "../../assets/images/serviceImage5.png";
 import service1Image6 from "../../assets/images/serviceImage6.png";
 import Footer from "@/sections/Footer";
 
-import {
-    Megaphone,
-    // PenTool,
-    Globe,
-    // Search,
-    PlayCircle,
-    // Palette,
-} from "lucide-react";
 import { ServiceRow } from "@/sections/ServiceRow";
 import Navbar2 from "@/sections/Navbar2";
 import CtaBannerServicePage from "@/sections/CtaBannerServicePage";
@@ -55,7 +47,6 @@ export default function ServicesPage() {
                         ]}
                         image={service1Image} // Add your image path
                         imageRight={false}
-                        icon={<Megaphone className="text-orange-500 w-8 h-8" />}
                     />
                     {/* Content Creation Section */}
                     <ServiceRow
@@ -69,9 +60,6 @@ export default function ServicesPage() {
                         ]}
                         image={service1Image2}
                         imageRight={true}
-                        icon={
-                            <PlayCircle className="text-purple-600 w-8 h-8" />
-                        }
                     />
                     {/* Website Section */}
                     <ServiceRow
@@ -86,7 +74,6 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image3}
                         imageRight={false}
-                        icon={<Globe className="text-orange-500 w-8 h-8" />}
                     />
                     {/* Content Creation Section */}
                     <ServiceRow
@@ -100,9 +87,6 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image4}
                         imageRight={true}
-                        icon={
-                            <PlayCircle className="text-purple-600 w-8 h-8" />
-                        }
                     />
                     {/* Website Section */}
                     <ServiceRow
@@ -116,7 +100,6 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image5}
                         imageRight={false}
-                        icon={<Globe className="text-orange-500 w-8 h-8" />}
                     />{" "}
                     <ServiceRow
                         title="SEO + Online Presence"
@@ -130,9 +113,6 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image6}
                         imageRight={true}
-                        icon={
-                            <PlayCircle className="text-purple-600 w-8 h-8" />
-                        }
                     />
                 </div>
             </main>
