@@ -13,7 +13,7 @@ const navLinks = [
     { label: "Contact", href: "#Contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar2() {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -37,23 +37,23 @@ export default function Navbar() {
 
     const navbarClasses = scrolled
         ? "bg-black/30 backdrop-blur-md shadow-lg"
-        : "bg-transparent";
+        : "bg-white text-black";
 
     return (
         <section
-            className={`fixed top-0 left-0 w-full py-[24px] z-50 transition-all duration-300 ${navbarClasses}`}
+            className={`fixed top-0 left-0 w-full py-[24px] z-50 transition-all duration-300 bg-white text-black ${navbarClasses}`}
         >
             <div className={`mx-auto w-[96%] sm:w-[94%] ${desktopMaxWidth}`}>
                 <div className="flex justify-between items-center h-10 ml-7">
                     {/* Logo Section */}
-                    <div className="flex items-center space-x-2 h-[58px] w-[219.19px]">
+                    <div className="flex items-center space-x-2 h-[68px] w-[229.19px]">
                         <div className="flex items-center justify-center rounded-sm">
                             <Image
                                 src={logoImage}
                                 alt="Eyoha Digitals Logo"
                                 width={58}
                                 height={58}
-                                className="object-contain"
+                                className="object-contain "
                             />
                         </div>
                         <Link
@@ -66,7 +66,7 @@ export default function Navbar() {
 
                     {/* Desktop Navigation - UPDATED to use <Link> */}
                     <div className="hidden md:flex items-center">
-                        <nav className="flex space-x-8 font-medium text-[#FFFFFF] text-sm">
+                        <nav className="flex space-x-8 font-medium text-black text-sm">
                             {navLinks.map((link) => (
                                 <Link
                                     href={link.href}

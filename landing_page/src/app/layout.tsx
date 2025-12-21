@@ -14,15 +14,16 @@ export const metadata: Metadata = {
     description: "",
 };
 
+// app/layout.tsx
 export default function RootLayout({
     children,
-}: Readonly<{
+}: {
     children: React.ReactNode;
-}>) {
+}) {
     return (
         <html lang="en">
             <body
-                className={`${inter.variable} font-sans antialiased  text-white`}
+                className={`${inter.variable} font-sans antialiased text-slate-900`}
             >
                 {children}
             </body>
