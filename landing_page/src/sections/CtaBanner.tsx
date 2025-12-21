@@ -9,7 +9,7 @@ const CtaBanner: React.FC = () => {
                     className="p-12 md:p-16 rounded-3xl text-center shadow-2xl"
                     style={{
                         backgroundImage:
-                            "linear-gradient(to right, #6B21A8, #F97316)",
+                            "linear-gradient(to right, #6A0DAD, #FF6600)",
                     }}
                 >
                     <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
