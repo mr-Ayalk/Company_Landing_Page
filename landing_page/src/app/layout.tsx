@@ -9,9 +9,15 @@ const inter = Inter({
     axes: ["opsz"],
 });
 
+// app/layout.tsx
 export const metadata: Metadata = {
     title: "Eyoha Digitals - Elevate Your Brand with Expert Digital Marketing",
-    description: "",
+    description: "Expert digital marketing services for your brand.",
+    icons: {
+        icon: "/eyohalogo.png", // Standard favicon
+        shortcut: "/eyohalogo.png", // Alternative for older browsers
+        apple: "/eyohalogo.png", // For iOS home screen bookmarks
+    },
 };
 
 // app/layout.tsx
