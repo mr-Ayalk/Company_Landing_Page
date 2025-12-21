@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 interface ClientCardProps {
@@ -33,7 +34,7 @@ export const ClientCard: React.FC<ClientCardProps> = ({
 
             <div className="relative w-24 h-24 mb-6">
                 <div className="w-full h-full rounded-full border-[3px] border-slate-900 overflow-hidden flex items-center justify-center bg-white shadow-sm">
-                    <img
+                    <Image
                         src={logo}
                         alt={companyName}
                         className="w-full h-full object-cover"

@@ -44,18 +44,18 @@ const clientLogos = [
         size: 100,
     },
     {
-        src: sofiFurnitureImage,
+        src: beltech,
         alt: "Help",
         radius: 170,
         angle: 150,
-        size: 85,
+        size: 100,
     },
     {
-        src: beltech,
+        src: sofiFurnitureImage,
         alt: "Finance",
         radius: 170,
         angle: 10,
-        size: 95,
+        size: 75,
     },
 ];
 
