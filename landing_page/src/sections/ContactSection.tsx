@@ -128,7 +128,7 @@ export default function ContactSection() {
                                                 Discovery Call
                                             </p>
                                             <p className="text-xs text-gray-500">
-                                                30 min • Zoom
+                                                30 min • Google Meet
                                             </p>
                                         </div>
                                     </div>
