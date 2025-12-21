@@ -44,7 +44,7 @@ export default function Navbar() {
 
     return (
         <section
-            className={`fixed top-0 left-0 w-full pt-[34px] pb-2 z-50 transition-all duration-300 ${navbarClasses}`}
+            className={`fixed top-0 left-0 w-full py-[24px]  z-50 transition-all duration-300 ${navbarClasses}`}
         >
             <div className={`mx-auto w-[96%] sm:w-[94%] ${desktopMaxWidth}`}>
                 <div className="flex justify-between items-center h-10 ml-7">
