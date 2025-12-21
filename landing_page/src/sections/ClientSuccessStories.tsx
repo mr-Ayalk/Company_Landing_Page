@@ -1,66 +1,73 @@
-import FlintStoneImage from "../assets/images/flintstone.png";
-import EthioteleImage from "../assets/images/ethiotele.png";
-import RealStateImage from "../assets/images/realstate.png";
-import FinanceImage from "../assets/images/finance.png";
-import tweeterImage from "../assets/images/tweeter.png";
-
+import skillBridgeLogo from "../assets/images/skillBridgelogo.png";
+import beltech from "../assets/images/beltechlogo.png";
+import sofiFurnitureImage from "../assets/images/sofiFerniture.png";
+import FinanceImage from "../assets/images/aminhospitallogo.png";
+import galaxyFurniture from "../assets/images/galaxyfurniture.png";
+import makiImage from "../assets/images/maki.png";
+import sebenImage from "../assets/images/sebenlogo.png";
 import Image from "next/image";
 
 const clientLogos = [
     // Outer Ring (Radius approx 225px)
     {
-        src: FlintStoneImage,
+        src: skillBridgeLogo,
         alt: "Flintstone",
-        radius: 225,
+        radius: 245,
         angle: -140,
     },
     {
-        src: RealStateImage,
+        src: galaxyFurniture,
+        alt: "Seben",
+        radius: 100,
+        angle: -100,
+    },
+    {
+        src: sofiFurnitureImage,
         alt: "Real Estate",
-        radius: 225,
+        radius: 245,
         angle: -90,
     },
     {
-        src: EthioteleImage,
+        src: makiImage,
         alt: "Ethio Telecom",
-        radius: 225,
+        radius: 245,
         angle: -40,
     },
-    { src: tweeterImage, alt: "Meta", radius: 225, angle: 90 },
-    {
-        src: FlintStoneImage,
-        alt: "Spotify",
-        radius: 225,
-        angle: 180,
-    },
+    { src: sebenImage, alt: "Meta", radius: 245, angle: 90 },
+    // {
+    //     src: skillBridgeLogo,
+    //     alt: "Spotify",
+    //     radius: 225,
+    //     angle: 180,
+    // },
 
     // Middle Ring (Radius approx 150px)
-    {
-        src: tweeterImage,
-        alt: "Twitter",
-        radius: 150,
-        angle: -150,
-    },
-    { src: FlintStoneImage, alt: "Airbnb", radius: 150, angle: -30 },
-    {
-        src: RealStateImage,
-        alt: "Education",
-        radius: 150,
-        angle: 45,
-    },
-    { src: FinanceImage, alt: "Help", radius: 150, angle: 150 },
+    // {
+    //     src: galaxyFurniture,
+    //     alt: "Twitter",
+    //     radius: 150,
+    //     angle: -150,
+    // },
+    // { src: skillBridgeLogo, alt: "Airbnb", radius: 150, angle: -30 },
+    // {
+    //     src: sofiFurnitureImage,
+    //     alt: "Education",
+    //     radius: 150,
+    //     angle: 45,
+    // },
+    { src: FinanceImage, alt: "Help", radius: 170, angle: 150 },
 
     // Inner Ring (Radius approx 90px)
+    // {
+    //     src: beltech,
+    //     alt: "Shopify",
+    //     radius: 90,
+    //     angle: 120,
+    // },
     {
-        src: EthioteleImage,
-        alt: "Shopify",
-        radius: 90,
-        angle: 120,
-    },
-    {
-        src: FinanceImage,
+        src: beltech,
         alt: "Finance",
-        radius: 150,
+        radius: 170,
         angle: 10,
     },
 ];
@@ -157,11 +164,11 @@ export default function ClientSuccessStories() {
 
                     {/* Right Column: Updated Orbit Logic */}
                     <div className="relative h-[500px] w-full flex items-center justify-center">
-                        <div className="relative w-[450px] h-[450px]">
+                        <div className="relative w-[500px] h-[500px]">
                             {/* Orbit Rings - Solid lines as per second image */}
-                            <div className="absolute inset-0 border border-purple-200 rounded-full" />
-                            <div className="absolute inset-[75px] border border-purple-200 rounded-full" />
-                            <div className="absolute inset-[150px] border border-purple-200 rounded-full" />
+                            <div className="absolute inset-0 border border-[#6A0DAD] rounded-full" />
+                            <div className="absolute inset-[75px] border border-[#6A0DAD] rounded-full" />
+                            <div className="absolute inset-[150px] border border-[#6A0DAD] rounded-full" />
 
                             {/* Central Hub */}
                             <div
@@ -192,7 +199,7 @@ export default function ClientSuccessStories() {
                             {clientLogos.map((logo, index) => (
                                 <div
                                     key={index}
-                                    className="absolute w-14 h-14 bg-white rounded-full shadow-lg flex items-center justify-center p-2 z-10 hover:scale-110 transition-transform duration-300"
+                                    className="absolute w-[108px]  h-[106px] bg-white rounded-full shadow-lg flex items-center justify-center p-2 z-10 hover:scale-110 transition-transform duration-300"
                                     style={getLogoPosition(
                                         logo.radius,
                                         logo.angle
@@ -204,8 +211,8 @@ export default function ClientSuccessStories() {
                                             <span className="text-[10px] font-bold text-gray-400">
                                                 <Image
                                                     src={logo.src}
-                                                    width={80}
-                                                    height={80}
+                                                    width={180}
+                                                    height={180}
                                                     alt={logo.alt}
                                                     className="object-contain rounded-full"
                                                 />
