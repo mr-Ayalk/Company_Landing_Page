@@ -10,6 +10,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import mapImage from "../assets/images/Rectangle.png";
+import Link from "next/link";
 export default function ContactSection() {
     return (
         <section className="py-20 px-4 bg-white">
@@ -52,10 +53,10 @@ export default function ContactSection() {
                             </div>
                             <div>
                                 <label className="block text-sm font-bold text-gray-700 mb-2">
-                                    Budget Range
+                                    Phone Number
                                 </label>
                                 <input
-                                    type="text"
+                                    type="number"
                                     className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all"
                                 />
                             </div>
@@ -88,7 +89,7 @@ export default function ContactSection() {
                                     <Mail size={20} />
                                 </div>
                                 <span className="text-gray-700 font-medium">
-                                    hello@eyohadigitals.com
+                                    eyohadigitals@gmail.com
                                 </span>
                             </div>
 
@@ -106,29 +107,37 @@ export default function ContactSection() {
                         </div>
 
                         {/* Book a Consultation */}
-                        <div className="mb-10">
-                            <h3 className="text-lg font-bold text-[#6A0DAD] mb-4">
-                                Book a Consultation
-                            </h3>
-                            <div className="bg-white p-4 rounded-2xl flex items-center justify-between shadow-sm border border-purple-100 hover:scale-[1.02] transition-transform cursor-pointer">
-                                <div className="flex items-center space-x-4">
-                                    <div className="w-10 h-10 bg-[#E9D5FF] rounded-lg flex items-center justify-center text-[#6A0DAD] font-bold">
-                                        30
+                        <Link
+                            href="https://calendly.com/eyohadigitals/30min"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            {" "}
+                            <div className="mb-10">
+                                <h3 className="text-lg font-bold text-[#6A0DAD] mb-4">
+                                    Let&apos;s have a one to one meeting
+                                </h3>
+                                <div className="bg-white p-4 rounded-2xl flex items-center justify-between shadow-sm border border-purple-100 hover:scale-[1.02] transition-transform cursor-pointer">
+                                    <div className="flex items-center space-x-4">
+                                        <div className="w-10 h-10 bg-[#E9D5FF] rounded-lg flex items-center justify-center text-[#6A0DAD] font-bold">
+                                            30
+                                        </div>
+                                        <div>
+                                            <p className="font-bold text-gray-800">
+                                                Discovery Call
+                                            </p>
+                                            <p className="text-xs text-gray-500">
+                                                30 min • Zoom
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div>
-                                        <p className="font-bold text-gray-800">
-                                            Discovery Call
-                                        </p>
-                                        <p className="text-xs text-gray-500">
-                                            30 min • Zoom
-                                        </p>
+                                    <div className="text-[#6A0DAD] flex items-center text-sm font-bold">
+                                        Select Time{" "}
+                                        <span className="ml-1">→</span>
                                     </div>
-                                </div>
-                                <div className="text-[#6A0DAD] flex items-center text-sm font-bold">
-                                    Select Time <span className="ml-1">→</span>
                                 </div>
                             </div>
-                        </div>
+                        </Link>
 
                         {/* Map Preview Placeholder */}
                         <div className="relative h-40 rounded-2xl overflow-hidden group">
