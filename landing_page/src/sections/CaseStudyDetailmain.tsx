@@ -102,7 +102,7 @@ export default function CaseStudyDetailmain() {
 
                         <div className="space-y-6">
                             <h3 className="text-xl font-extrabold text-gray-900">
-                                The Challenge text #19227
+                                The Challenge
                             </h3>
 
                             <ul className="space-y-4">

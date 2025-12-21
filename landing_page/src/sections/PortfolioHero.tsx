@@ -53,7 +53,7 @@ const projects = [
 
 export default function ProjectGrid() {
     return (
-        <section className="py-20 px-6 bg-[#FAF9FF] font-sans">
+        <section className="py-36 px-6 bg-[#FAF9FF] font-sans">
             {/* Header Section */}
             <div className="text-center max-w-3xl mx-auto mb-16">
                 <h2 className="text-[48px] font-black text-[#0F172A] mb-4">
