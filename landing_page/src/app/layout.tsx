@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Landing Page",
+    title: "Eyoha Digitals - Elevate Your Brand with Expert Digital Marketing",
     description: "",
 };
 
