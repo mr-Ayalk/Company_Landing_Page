@@ -1,13 +1,7 @@
 "use client";
 import React from "react";
 
-import {
-    Megaphone,
-    PenTool,
-    // BarChart3,
-    Globe,
-    // MousePointer2,
-} from "lucide-react";
+
 import { ServiceRow } from "@/sections/ServiceRow";
 
 // Import your images here
@@ -44,7 +38,7 @@ export default function ServicesPage() {
                     ]}
                     image="/path-to-your-social-image.jpg"
                     imageRight={true}
-                    icon={<Megaphone className="text-orange-500 w-8 h-8" />}
+                 
                 />
 
                 {/* Content Creation */}
@@ -59,7 +53,7 @@ export default function ServicesPage() {
                     ]}
                     image="/path-to-your-content-image.jpg"
                     imageRight={false}
-                    icon={<PenTool className="text-purple-500 w-8 h-8" />}
+                
                 />
 
                 {/* Website Design */}
@@ -74,7 +68,7 @@ export default function ServicesPage() {
                     ]}
                     image="/path-to-your-web-image.jpg"
                     imageRight={true}
-                    icon={<Globe className="text-orange-500 w-8 h-8" />}
+                  
                 />
             </div>
 
