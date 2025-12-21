@@ -8,9 +8,9 @@ import Image from "next/image";
 const navLinks = [
     { label: "Home", href: "/" },
     { label: "Services", href: "/Services" },
-    { label: "Portfolio", href: "#Portfolio" },
+    { label: "Portfolio", href: "/Portfolio" },
     { label: "About", href: "/About" },
-    { label: "Contact", href: "#Contact" },
+    { label: "Contact", href: "/Contact" },
 ];
 
 export default function Navbar() {

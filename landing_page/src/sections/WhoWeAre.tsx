@@ -1,6 +1,6 @@
 // components/WhoWeAre.tsx
 import Image from "next/image";
-import aboutImage from "../assets/images/aboutpageImage.png";
+import aboutImage from "../assets/images/aboutpage3.png";
 
 export default function WhoWeAre() {
     return (
