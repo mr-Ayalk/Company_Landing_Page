@@ -1,8 +1,8 @@
 "use client";
 import React from "react";
 
-
 import { ServiceRow } from "@/sections/ServiceRow";
+import { Globe, Megaphone, PenTool } from "lucide-react";
 
 // Import your images here
 // import socialImg from "../assets/images/social-media.jpg";
@@ -38,7 +38,7 @@ export default function ServicesPage() {
                     ]}
                     image="/path-to-your-social-image.jpg"
                     imageRight={true}
-                 
+                    icon={<Megaphone className="text-orange-500 w-8 h-8" />}
                 />
 
                 {/* Content Creation */}
@@ -53,7 +53,7 @@ export default function ServicesPage() {
                     ]}
                     image="/path-to-your-content-image.jpg"
                     imageRight={false}
-                
+                    icon={<PenTool className="text-purple-500 w-8 h-8" />}
                 />
 
                 {/* Website Design */}
@@ -68,7 +68,7 @@ export default function ServicesPage() {
                     ]}
                     image="/path-to-your-web-image.jpg"
                     imageRight={true}
-                  
+                    icon={<Globe className="text-orange-500 w-8 h-8" />}
                 />
             </div>
 
@@ -80,8 +80,8 @@ export default function ServicesPage() {
                             Ready to Transform Your Digital Presence?
                         </h2>
                         <p className="mb-10 text-white/90 font-medium">
-                            Let&apos;s discuss how our services can help you grow and
-                            succeed.
+                            Let&apos;s discuss how our services can help you
+                            grow and succeed.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <button className="bg-white text-gray-900 px-10 py-4 rounded-xl font-bold hover:bg-gray-100 transition-colors">

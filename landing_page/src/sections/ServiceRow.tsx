@@ -9,7 +9,7 @@ interface ServiceRowProps {
     features: string[];
     image: StaticImageData | string;
     imageRight?: boolean;
-    // icon?: React.ReactNode;
+    icon?: React.ReactNode;
 }
 
 export const ServiceRow: React.FC<ServiceRowProps> = ({
@@ -19,7 +19,7 @@ export const ServiceRow: React.FC<ServiceRowProps> = ({
     features,
     image,
     imageRight = false,
-    // icon,
+    icon,
 }) => {
     return (
         <div className="py-20 border-b border-gray-100 last:border-0">
@@ -32,7 +32,7 @@ export const ServiceRow: React.FC<ServiceRowProps> = ({
                 <div className="flex-1 space-y-6">
                     <div className="space-y-2">
                         <div className="flex items-center gap-3">
-                            {/* {icon} */}
+                            {icon}
                             <h2 className="text-3xl font-extrabold text-[#4C1D95]">
                                 {title}
                             </h2>

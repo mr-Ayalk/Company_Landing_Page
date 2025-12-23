@@ -9,6 +9,16 @@ import Footer from "@/sections/Footer";
 import { ServiceRow } from "@/sections/ServiceRow";
 import Navbar2 from "@/sections/Navbar2";
 import CtaBannerServicePage from "@/sections/CtaBannerServicePage";
+import {
+    Globe,
+    Layout,
+    Megaphone,
+    MonitorSpeaker,
+    Palette,
+    PenTool,
+    SearchCheck,
+    TrendingUp,
+} from "lucide-react";
 
 export default function ServicesPage() {
     return (
@@ -46,6 +56,7 @@ export default function ServicesPage() {
                         ]}
                         image={service1Image} // Add your image path
                         imageRight={false}
+                        icon={<Megaphone className="text-orange-500 w-8 h-8" />}
                     />
                     {/* Content Creation Section */}
                     <ServiceRow
@@ -59,6 +70,7 @@ export default function ServicesPage() {
                         ]}
                         image={service1Image2}
                         imageRight={true}
+                        icon={<PenTool className="text-purple-500 w-8 h-8" />}
                     />
                     {/* Website Section */}
                     <ServiceRow
@@ -73,6 +85,9 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image3}
                         imageRight={false}
+                        icon={
+                            <TrendingUp className="text-orange-500 w-8 h-8" />
+                        }
                     />
                     {/* Content Creation Section */}
                     <ServiceRow
@@ -86,10 +101,11 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image4}
                         imageRight={true}
+                        icon={<Palette className="text-orange-500 w-8 h-8" />}
                     />
                     {/* Website Section */}
                     <ServiceRow
-                        title="Website Design, Development & Hosting"
+                        title="Complete Web Solutions"
                         subtitle="Clean, modern & fast-loading websites."
                         description="We build responsive websites focusing on user experience and conversion optimization."
                         features={[
@@ -99,6 +115,9 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image5}
                         imageRight={false}
+                        icon={
+                            <MonitorSpeaker className="text-orange-500 w-8 h-8" />
+                        }
                     />{" "}
                     <ServiceRow
                         title="SEO + Online Presence"
@@ -112,6 +131,9 @@ that maximize your advertising investment across all major platforms."
                         ]}
                         image={service1Image6}
                         imageRight={true}
+                        icon={
+                            <SearchCheck className="text-orange-500 w-8 h-8" />
+                        }
                     />
                 </div>
             </main>
