@@ -6,7 +6,6 @@ import service1Image4 from "../../assets/images/serviceImage4.png";
 import service1Image5 from "../../assets/images/serviceImage5.png";
 import service1Image6 from "../../assets/images/serviceImage6.png";
 import Footer from "@/sections/Footer";
-
 import { ServiceRow } from "@/sections/ServiceRow";
 import Navbar2 from "@/sections/Navbar2";
 import CtaBannerServicePage from "@/sections/CtaBannerServicePage";
