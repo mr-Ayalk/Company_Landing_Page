@@ -222,7 +222,7 @@ const clientLogos = [
     {
         src: skillBridgeLogo,
         alt: "Flintstone",
-        radius: 285,
+        radius: 245,
         angle: -140,
         size: 110, // Added custom size
     },
@@ -236,7 +236,7 @@ const clientLogos = [
     {
         src: FinanceImage,
         alt: "Real Estate",
-        radius: 295,
+        radius: 245,
         angle: -90,
         size: 120, // Larger size
     },
@@ -250,14 +250,14 @@ const clientLogos = [
     {
         src: galaxyFurniture,
         alt: "Meta",
-        radius: 295,
+        radius: 245,
         angle: 90,
         size: 100,
     },
     {
         src: beltech,
         alt: "Help",
-        radius: 190,
+        radius: 170,
         angle: 150,
         size: 100,
     },

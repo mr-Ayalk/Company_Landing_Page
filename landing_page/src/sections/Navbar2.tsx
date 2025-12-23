@@ -95,12 +95,12 @@ export default function Navbar2() {
                     <div className="md:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
-                            className="text-white focus:outline-none p-2"
+                            className="text-black focus:outline-none p-2"
                             aria-label="Toggle Menu"
                         >
                             <svg
                                 className="w-6 h-6"
-                                fill="none"
+                                fill="black"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
                                 xmlns="http://www.w3.org/2000/svg"
