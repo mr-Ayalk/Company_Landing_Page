@@ -10,8 +10,8 @@ import { ServiceRow } from "@/sections/ServiceRow";
 import Navbar2 from "@/sections/Navbar2";
 import CtaBannerServicePage from "@/sections/CtaBannerServicePage";
 import {
-    Globe,
-    Layout,
+    // Globe,
+    // Layout,
     Megaphone,
     MonitorSpeaker,
     Palette,
