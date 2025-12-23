@@ -10,7 +10,7 @@ export default function WhoWeAre() {
     const contentMaxWidth = "max-w-[1233px]";
 
     return (
-        <section className="py-36 px-[55px] md:py-32">
+        <section className="pb-96 xs:pb-80 sm:pb-36    pt-20 md:pb-48 px-[55px] md:py-32 bg-white opacity-100">
             <div
                 className={`mx-auto w-[92%] lg:w-[1280px] h-[404px] ${contentMaxWidth}`}
             >
