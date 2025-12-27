@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import logoImage from "../assets/images/eyohalogo.png";
+import logoImage from "../assets/images/eyohalogonew.png";
 
 import Link from "next/link";
 import Image from "next/image";
