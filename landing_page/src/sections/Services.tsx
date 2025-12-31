@@ -90,7 +90,7 @@ const ServicesSection: React.FC = () => {
                     <p className="mt-2 text-xl text-gray-500 max-w-3xl mx-auto">
                         Elevate your brand with our comprehensive suite of
                         digital solutions designed to drive growth and
-                        engagement
+                        engagement.
                     </p>
                 </div>
 
