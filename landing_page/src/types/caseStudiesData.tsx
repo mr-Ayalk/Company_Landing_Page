@@ -124,8 +124,19 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             },
         ],
         metrics: [
-            { label: "Increase Social Engagement", value: "300%" },
-            { label: "Inquiry increase", value: "85%" },
+            { label: "Increased social media engagement rate", value: "300%" },
+            {
+                label: "Growth in follower base within a short period",
+                value: "4.8%",
+            },
+            {
+                label: "Improved customer inquiries through social platforms",
+                value: "85%",
+            },
+            {
+                label: "Stronger brand recognition within the interior & furniture market",
+                value: "250%",
+            },
         ],
         testimonial: {
             quote: "Eyoha Digitals helped us transform our online presence...",
@@ -216,9 +227,20 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
                 date: "Sep 2025 - Present",
             },
         ],
-        metrics: [
-            { label: "Engagement Increase", value: "300%" },
-            { label: "Inquiry boost", value: "85%" },
+       metrics: [
+            { label: "Increased social media engagement rate", value: "300%" },
+            {
+                label: "Growth in follower base within a short period",
+                value: "4.8%",
+            },
+            {
+                label: "Improved customer inquiries through social platforms",
+                value: "85%",
+            },
+            {
+                label: "Stronger brand recognition within the interior & furniture market",
+                value: "250%",
+            },
         ],
         testimonial: {
             quote: "Their work significantly improved our presentation.",
@@ -298,7 +320,21 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
                 date: "July 2025 -November 2025",
             },
         ],
-        metrics: [{ label: "Community Engagement", value: "200%" }],
+       metrics: [
+            { label: "Increased social media engagement rate", value: "300%" },
+            {
+                label: "Growth in follower base within a short period",
+                value: "4.8%",
+            },
+            {
+                label: "Improved customer inquiries through social platforms",
+                value: "85%",
+            },
+            {
+                label: "Stronger brand recognition within the interior & furniture market",
+                value: "250%",
+            },
+        ],
         testimonial: {
             quote: "They improved how our services are presented.",
             author: "Amin Hospital",
@@ -384,7 +420,21 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
                 date: "Sep 2025 - Present",
             },
         ],
-        metrics: [{ label: "Lead inquiry increase", value: "85%" }],
+        metrics: [
+            { label: "Increased social media engagement rate", value: "300%" },
+            {
+                label: "Growth in follower base within a short period",
+                value: "4.8%",
+            },
+            {
+                label: "Improved customer inquiries through social platforms",
+                value: "85%",
+            },
+            {
+                label: "Stronger brand recognition within the interior & furniture market",
+                value: "250%",
+            },
+        ],
         testimonial: {
             quote: "Transformed our online presence.",
             author: "Beltech Solutions",
