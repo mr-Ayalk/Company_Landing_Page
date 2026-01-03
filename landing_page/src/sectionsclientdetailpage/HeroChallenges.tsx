@@ -17,8 +17,8 @@ export const HeroChallenges = (
         logo,
         description,
         challenges,
-        accentColor = "#7C3AED",
-    }: HeroChallengesProps // 2. Replace 'any' with the interface
+    }: // accentColor = "#7C3AED",
+    HeroChallengesProps // 2. Replace 'any' with the interface
 ) => (
     <section className="relative py-20 px-6 max-w-7xl mx-auto overflow-hidden">
         <div className="mb-1 pt-6">
