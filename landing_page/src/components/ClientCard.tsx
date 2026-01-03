@@ -11,10 +11,11 @@ interface ClientCardProps {
     testimonial: string;
     category: string;
     accentColor: string;
+    tagline: string;
 }
 
-// 2. Single definition of the Component
-// Use "export" so you can use it in other files, or just "const" if it's only for this file
+// ... (imports and interface remain the same)
+
 export const ClientCard = ({
     id,
     logo,
@@ -23,6 +24,7 @@ export const ClientCard = ({
     testimonial,
     category,
     accentColor,
+    tagline, // Now being read below
 }: ClientCardProps) => {
     const dotColor =
         accentColor === "orange" ? "bg-orange-500" : "bg-purple-500";
@@ -49,12 +51,19 @@ export const ClientCard = ({
                 className={`absolute top-6 right-6 w-2 h-2 rounded-full ${dotColor}`}
             />
 
+            {/* Tagline Addition: This resolves the 'unused variable' error */}
+            <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-2">
+                {tagline}
+            </span>
+
             <h3 className="text-[#7C3AED] font-bold text-lg mb-1">
                 {companyName}
             </h3>
+
             <p className="text-gray-400 text-sm mb-6 font-medium">
                 {subcompanyName}
             </p>
+
             <p className="text-gray-500 text-sm leading-relaxed italic mb-8 px-4">
                 {testimonial}
             </p>
