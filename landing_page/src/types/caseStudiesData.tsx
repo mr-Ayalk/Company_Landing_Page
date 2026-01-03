@@ -144,14 +144,37 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
         ],
         services: [
             {
-                title: "Social Media Strategy",
-                description: "Brand awareness.",
-                icon: <Megaphone />,
+                title: "Website design and development",
+                description:
+                    "Planned structured content to increase reach, awareness, and student interest",
+                icon: <CodeXml />,
+                date: " Sep 2025 - Present",
             },
             {
-                title: "Visual Design",
-                description: "Lifestyle photography.",
+                title: "Visual Content Design",
+                description: "Designing high-quality social media assets.",
+                icon: <TrendingUp />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Brand building logo and branding",
+                description:
+                    "Improved brand consistency across all digital platforms",
                 icon: <Palette />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Product Focused Content Development",
+                description: "Showcased products clearly and professionally.",
+                icon: <Database />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Engagement Optimization Strategy",
+                description:
+                    "Boosted student interaction, inquiries, and enrollment interest",
+                icon: <Users />,
+                date: "Sep 2025 - Present",
             },
         ],
         metrics: [
@@ -256,9 +279,37 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         ],
         services: [
             {
-                title: "Website Design",
-                description: "Technical interface.",
-                icon: <Layout />,
+                title: "Website design and development",
+                description:
+                    "Planned structured content to increase reach, awareness, and student interest",
+                icon: <CodeXml />,
+                date: " Sep 2025 - Present",
+            },
+            {
+                title: "Visual Content Design",
+                description: "Designing high-quality social media assets.",
+                icon: <TrendingUp />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Brand building logo and branding",
+                description:
+                    "Improved brand consistency across all digital platforms",
+                icon: <Palette />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Product Focused Content Development",
+                description: "Showcased products clearly and professionally.",
+                icon: <Database />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Engagement Optimization Strategy",
+                description:
+                    "Boosted student interaction, inquiries, and enrollment interest",
+                icon: <Users />,
+                date: "Sep 2025 - Present",
             },
         ],
         metrics: [{ label: "Lead inquiry increase", value: "85%" }],
@@ -299,15 +350,37 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         ],
         services: [
             {
-                title: "Visual Content Design",
+                title: "Website design and development",
                 description:
-                    "High-end product rendering and lifestyle staging.",
-                icon: <Palette />,
+                    "Planned structured content to increase reach, awareness, and student interest",
+                icon: <CodeXml />,
+                date: " Sep 2025 - Present",
             },
             {
-                title: "Brand Identity",
-                description: "Refined logo and cohesive color system.",
-                icon: <Search />,
+                title: "Visual Content Design",
+                description: "Designing high-quality social media assets.",
+                icon: <TrendingUp />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Brand building logo and branding",
+                description:
+                    "Improved brand consistency across all digital platforms",
+                icon: <Palette />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Product Focused Content Development",
+                description: "Showcased products clearly and professionally.",
+                icon: <Database />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Engagement Optimization Strategy",
+                description:
+                    "Boosted student interaction, inquiries, and enrollment interest",
+                icon: <Users />,
+                date: "Sep 2025 - Present",
             },
         ],
         metrics: [
@@ -361,14 +434,13 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         services: [
             {
                 title: "Paid Ads",
-                description:
-                    "Strategic product targeting and funnel optimization.",
-                icon: <MousePointer2 />,
+                description: "Showcased products clearly and professionally.",
+                icon: <Database />,
                 date: "May 2024 - Jul 2024",
             },
             {
-                title: "Engagement Strategy",
-                description: "Optimizing social conversion rates.",
+                title: "Engagement Optimization Strategy",
+                description: "Boosted interactions and customer inquiries.",
                 icon: <Users />,
                 date: "May 2024 - Jul 2024",
             },
