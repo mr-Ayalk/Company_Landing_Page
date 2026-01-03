@@ -41,6 +41,7 @@ import aminbefore from "../assets/images/aminbefore.png";
 import aminafter from "../assets/images/aminafter.png";
 import skillbefore from "../assets/images/skillbefore.png";
 import skillafter from "../assets/images/skillafter.png";
+import testimonial from "../assets/images/testimonial.png";
 ///////////////////
 export interface CaseStudyProps {
     companyName: string;
@@ -58,7 +59,7 @@ export interface CaseStudyProps {
         quote: string;
         author: string;
         role: string;
-        avatar: string;
+        avatar: string | StaticImageData;
     };
     finalOutcome: string;
     beforeImage: string | StaticImageData;
@@ -139,10 +140,10 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             },
         ],
         testimonial: {
-            quote: "Eyoha Digitals helped us transform our online presence...",
-            author: "Skillbridge Institute",
-            role: "Founder",
-            avatar: "/assets/images/user-skill.png",
+            quote: "Eyoha Digitals helped us transform our online presence with clear branding and engaging content. Their work significantly improved how our products are presented and how customers interact with our brand.”",
+            author: "Skillbridge Institute of Technology",
+            role: "CEO",
+            avatar: testimonial,
         },
         finalOutcome: "Skillbridge has gained a stronger brand presence.",
         beforeImage: skillbefore,
@@ -227,7 +228,7 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
                 date: "Sep 2025 - Present",
             },
         ],
-       metrics: [
+        metrics: [
             { label: "Increased social media engagement rate", value: "300%" },
             {
                 label: "Growth in follower base within a short period",
@@ -243,10 +244,10 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             },
         ],
         testimonial: {
-            quote: "Their work significantly improved our presentation.",
+            quote: "Eyoha Digitals helped us transform our online presence with clear branding and engaging content. Their work significantly improved how our products are presented and how customers interact with our brand.”",
             author: "Galaxy Furniture",
             role: "CEO",
-            avatar: "/assets/images/user-galaxy.png",
+            avatar: testimonial,
         },
         finalOutcome: "Stronger presence and increased inquiries.",
         beforeImage: beforegalaxy,
@@ -320,7 +321,7 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
                 date: "July 2025 -November 2025",
             },
         ],
-       metrics: [
+        metrics: [
             { label: "Increased social media engagement rate", value: "300%" },
             {
                 label: "Growth in follower base within a short period",
@@ -336,10 +337,10 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
             },
         ],
         testimonial: {
-            quote: "They improved how our services are presented.",
+            quote: "Eyoha Digitals helped us transform our online presence with clear branding and engaging content. Their work significantly improved how our products are presented and how customers interact with our brand.”",
             author: "Amin Hospital",
-            role: "Director",
-            avatar: "/assets/images/user-amin.png",
+            role: "CEO",
+            avatar: testimonial,
         },
         finalOutcome: "Improved patient trust and communication.",
         beforeImage: aminbefore,
@@ -436,10 +437,10 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
             },
         ],
         testimonial: {
-            quote: "Transformed our online presence.",
-            author: "Beltech Solutions",
-            role: "Founder",
-            avatar: "/assets/images/user-beltech.png",
+            quote: "Eyoha Digitals helped us transform our online presence with clear branding and engaging content. Their work significantly improved how our products are presented and how customers interact with our brand.”",
+            author: "BelTech Solutions",
+            role: "CEO",
+            avatar: testimonial,
         },
         finalOutcome: "Increased enrollment queries.",
         beforeImage: beforegalaxy,
@@ -531,10 +532,10 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
             { label: "Growth", value: "4.8%" },
         ],
         testimonial: {
-            quote: "Eyoha Digitals significantly improved how our products are presented to our premium clientele.",
+            quote: "Eyoha Digitals helped us transform our online presence with clear branding and engaging content. Their work significantly improved how our products are presented and how customers interact with our brand.”",
             author: "Safe Furniture",
-            role: "Manager",
-            avatar: "/assets/images/user-safe.png",
+            role: "CEO",
+            avatar: testimonial,
         },
         finalOutcome:
             "Safe Furniture built a premium digital presence that matches their physical product quality.",
@@ -612,10 +613,10 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
             { label: "Inquiry boost", value: "4.8%" },
         ],
         testimonial: {
-            quote: "The strategic approach to our ads significantly improved how customers interact with us.",
+            quote: "Eyoha Digitals helped us transform our online presence with clear branding and engaging content. Their work significantly improved how our products are presented and how customers interact with our brand.”",
             author: "Maki Interior",
-            role: "Designer",
-            avatar: "/assets/images/user-maki.png",
+            role: "CEO",
+            avatar: testimonial,
         },
         finalOutcome:
             "Maki Interior reached new levels of brand awareness and high-intent lead generation.",
