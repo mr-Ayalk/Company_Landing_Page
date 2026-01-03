@@ -8,7 +8,11 @@ import {
     Users,
     MousePointer2,
     Briefcase,
+    Database,
+    CodeXml,
+    TrendingUp,
 } from "lucide-react";
+
 import skillbridgeLogo from "../assets/images/skillbridgenewlogo.png";
 import aminlogo from "../assets/images/aminlogonew.png";
 import galaxylogo from "../assets/images/galaxyfurniture.png";
@@ -65,15 +69,35 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             {
                 title: "Website design and development",
                 description:
-                    "Professional website focused on UX and lead generation.",
-                icon: <Layout />,
-                date: "May 2023 - Present",
+                    "Planned structured content to increase reach, awareness, and student interest",
+                icon: <CodeXml />,
+                date: " Sep 2025 - Present",
             },
             {
                 title: "Visual Content Design",
                 description: "Designing high-quality social media assets.",
+                icon: <TrendingUp />,
+                date: "Oct 2025 - Present",
+            },
+            {
+                title: "Brand building logo and branding",
+                description:
+                    "Improved brand consistency across all digital platforms",
                 icon: <Palette />,
-                date: "May 2023 - Present",
+                date: "May 2025 - Present",
+            },
+            {
+                title: "Product Focused Content Development",
+                description: "Showcased products clearly and professionally.",
+                icon: <Database />,
+                date: "Sep 2025 - Present",
+            },
+            {
+                title: "Engagement Optimization Strategy",
+                description:
+                    "Boosted student interaction, inquiries, and enrollment interest",
+                icon: <Users />,
+                date: "Sep 2025 - Present",
             },
         ],
         metrics: [
@@ -87,8 +111,8 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             avatar: "/assets/images/user-skill.png",
         },
         finalOutcome: "Skillbridge has gained a stronger brand presence.",
-        beforeImage: "/assets/images/skill-before.png",
-        afterImage: "/assets/images/skill-after.png",
+        beforeImage: "",
+        afterImage: "",
         transformationPoints: {
             before: ["Vague brand identity", "Low quality visuals"],
             after: [
