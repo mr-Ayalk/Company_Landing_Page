@@ -1,53 +1,68 @@
 import React from "react";
-import Image from "next/image";
+import { ArrowRight, LucideIcon } from "lucide-react"; // Import LucideIcon type
 
-// 1. Define the Interface
 interface FinalOutcomeProps {
-    tools: string[];
+    // Change string[] to LucideIcon[]
+    tools: LucideIcon[];
     finalOutcome: string;
-    accentColor?: string; // Optional because it has a default value
+    accentColor?: string;
 }
 
-export const FinalOutcome = (
-    { tools, finalOutcome, accentColor = "#7C3AED" }: FinalOutcomeProps // 2. Apply the Interface here
-) => (
-    <section className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="mb-24">
-            <h2 className="text-[28px] font-bold text-gray-900 mb-12">
+export const FinalOutcome = ({
+    tools,
+    finalOutcome,
+    accentColor = "#7C3AED",
+}: FinalOutcomeProps) => (
+    <section className="py-24 px-6 max-w-7xl mx-auto font-sans">
+        {/* Tools Section */}
+        <div className="mb-32">
+            <h2 className="text-[32px] font-bold text-[#111827] mb-12 tracking-tight">
                 Tools & Technologies
             </h2>
-            <div className="flex flex-wrap gap-12 items-center opacity-50 grayscale hover:grayscale-0 hover:opacity-100 transition-all">
-                {tools?.map((toolPath: string, i: number) => (
-                    // 3. Added relative container for Next.js Image "fill"
-                    <div key={i} className="relative h-10 w-24">
-                        <Image
-                            src={toolPath}
-                            fill
-                            className="object-contain"
-                            alt={`Tool icon ${i + 1}`}
-                        />
+            <div className="flex flex-wrap gap-x-16 gap-y-10 items-center justify-between">
+                {tools?.map((ToolIcon, i) => (
+                    <div
+                        key={i}
+                        className="flex flex-col items-center gap-2 group"
+                    >
+                        <div className="text-gray-400 group-hover:text-indigo-600 transition-colors">
+                            {/* Now TypeScript knows this is a component with size/strokeWidth */}
+                            <ToolIcon size={40} strokeWidth={1.5} />
+                        </div>
+                        <span className="text-[10px] font-bold uppercase tracking-tighter text-gray-400">
+                            {/* Use name property as a fallback for displayName */}
+                            {ToolIcon.displayName || ToolIcon.name}
+                        </span>
                     </div>
                 ))}
             </div>
         </div>
 
-        <div
-            style={{ backgroundColor: accentColor }}
-            className="rounded-[3.5rem] px-8 py-20 md:py-28 text-center text-white shadow-2xl relative overflow-hidden"
-        >
-            <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
-            <h2 className="text-4xl md:text-6xl font-black mb-8 relative z-10">
-                Final Outcome
-            </h2>
-            <p className="text-white/90 text-xl md:text-2xl max-w-3xl mx-auto mb-12 font-medium relative z-10">
-                {finalOutcome}
-            </p>
-            <button
-                className="relative z-10 bg-white px-12 py-5 rounded-2xl font-black text-lg transition-all hover:scale-105 active:scale-95 shadow-xl"
-                style={{ color: accentColor }}
-            >
-                Start Your Project
-            </button>
+        {/* Final Outcome CTA Card */}
+        <div className="rounded-[4rem] p-12 md:p-24 text-center text-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] relative overflow-hidden bg-[#780AC7]">
+            <div className="absolute inset-0 bg-gradient-to-tr from-black/10 via-transparent to-white/10 pointer-events-none" />
+            <div className="absolute -top-24 -right-24 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
+            <div className="absolute -bottom-24 -left-24 w-96 h-96 bg-black/5 rounded-full blur-3xl" />
+
+            <div className="relative z-10">
+                <span className="uppercase tracking-[0.2em] text-sm font-bold opacity-80 mb-6 block">
+                    The Result
+                </span>
+                <h2 className="text-5xl md:text-7xl font-black mb-10 tracking-tighter leading-[1.1]">
+                    Final Outcome
+                </h2>
+                <p className="text-white/90 text-xl md:text-3xl max-w-4xl mx-auto mb-16 font-medium leading-relaxed">
+                    &quot;{finalOutcome}&quot;
+                </p>
+
+                <button
+                    className="group relative z-10 bg-white px-14 py-6 rounded-2xl font-black text-xl transition-all duration-300 hover:shadow-[0_15px_30px_rgba(0,0,0,0.2)] hover:-translate-y-1 active:scale-95 flex items-center gap-3 mx-auto"
+                    style={{ color: accentColor }}
+                >
+                    Start Your Project
+                    <ArrowRight className="w-6 h-6 transition-transform group-hover:translate-x-1" />
+                </button>
+            </div>
         </div>
     </section>
 );

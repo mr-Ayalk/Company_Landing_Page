@@ -11,6 +11,15 @@ import {
     Database,
     CodeXml,
     TrendingUp,
+    LucideIcon,
+    Figma,
+    Globe,
+    Component,
+    Layers,
+    Layout,
+    Share2,
+    Smartphone,
+    Type,
 } from "lucide-react";
 // images import //
 import skillbridgeLogo from "../assets/images/skillbridgenewlogo.png";
@@ -45,6 +54,7 @@ import testimonial from "../assets/images/testimonial.png";
 ///////////////////
 export interface CaseStudyProps {
     companyName: string;
+    tools: LucideIcon[];
     logo: string | StaticImageData;
     description: string;
     challenges: string[];
@@ -73,7 +83,7 @@ export interface CaseStudyProps {
         desc: string;
         img: string | StaticImageData;
     }[];
-    tools: string[]; // This makes it required for all objects
+    // tools: string[];
 }
 
 export const PAGE_DATA: Record<string, CaseStudyProps> = {
@@ -178,7 +188,16 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
                 img: paidaddkill,
             },
         ],
-        tools: ["/assets/icons/figma.png", "/assets/icons/nextjs.png"],
+        tools: [
+            Figma,
+            Globe,
+            Component,
+            Layers,
+            Layout,
+            Share2,
+            Smartphone,
+            Type,
+        ],
     },
 
     galaxyFurniture: {
@@ -282,7 +301,16 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
                 img: galaxymobile,
             },
         ],
-        tools: ["/assets/icons/ps.png", "/assets/icons/ai.png"], // Added missing tools
+        tools: [
+            Figma,
+            Globe,
+            Component,
+            Layers,
+            Layout,
+            Share2,
+            Smartphone,
+            Type,
+        ],
     },
 
     aminHospital: {
@@ -370,7 +398,16 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
                 img: amin1,
             },
         ],
-        tools: ["/assets/icons/ps.png"], // Added missing tools
+        tools: [
+            Figma,
+            Globe,
+            Component,
+            Layers,
+            Layout,
+            Share2,
+            Smartphone,
+            Type,
+        ],
     },
 
     beltechSolutions: {
@@ -475,7 +512,16 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
                 img: linkedinaccount,
             },
         ],
-        tools: ["/assets/icons/figma.png", "/assets/icons/nextjs.png"], // Added missing tools
+        tools: [
+            Figma,
+            Globe,
+            Component,
+            Layers,
+            Layout,
+            Share2,
+            Smartphone,
+            Type,
+        ],
     },
 
     safeFurniture: {
@@ -573,9 +619,14 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         ],
         // Added tools for Safe Furniture
         tools: [
-            "/assets/icons/ps.png",
-            "/assets/icons/ai.png",
-            "/assets/icons/figma.png",
+            Figma,
+            Globe,
+            Component,
+            Layers,
+            Layout,
+            Share2,
+            Smartphone,
+            Type,
         ],
     },
 
@@ -644,9 +695,14 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         ],
         // Added tools for Maki Interior (including Marketing/Ads tools)
         tools: [
-            "/assets/icons/meta.png",
-            "/assets/icons/google-ads.png",
-            "/assets/icons/figma.png",
+            Figma,
+            Globe,
+            Component,
+            Layers,
+            Layout,
+            Share2,
+            Smartphone,
+            Type,
         ],
     },
 };
