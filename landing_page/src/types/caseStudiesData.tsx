@@ -30,7 +30,17 @@ import amin2 from "../assets/images/amintiktok2.png";
 import amin1 from "../assets/images/amintiktok1.png";
 import galaxyhome from "../assets/images/galaxyhome.png";
 import galaxybrochure from "../assets/images/galaxybrochure.png";
-import galaxymobile from "../assets/images/galaxymobile.png"
+import galaxymobile from "../assets/images/galaxymobile.png";
+import beforegalaxy from "../assets/images/beforegalaxy.png";
+import aftergalaxy from "../assets/images/aftergalaxy.png";
+import sofibefore from "../assets/images/sofibefore.png";
+import sofiafter from "../assets/images/sofiafter.png";
+import makibefore from "../assets/images/makibefore.png";
+import makiafter from "../assets/images/makiafter.png";
+import aminbefore from "../assets/images/aminbefore.png";
+import aminafter from "../assets/images/aminafter.png";
+import skillbefore from "../assets/images/skillbefore.png";
+import skillafter from "../assets/images/skillafter.png";
 ///////////////////
 export interface CaseStudyProps {
     companyName: string;
@@ -51,8 +61,8 @@ export interface CaseStudyProps {
         avatar: string;
     };
     finalOutcome: string;
-    beforeImage: string;
-    afterImage: string;
+    beforeImage: string | StaticImageData;
+    afterImage: string | StaticImageData;
     transformationPoints: {
         before: string[];
         after: string[];
@@ -124,13 +134,19 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             avatar: "/assets/images/user-skill.png",
         },
         finalOutcome: "Skillbridge has gained a stronger brand presence.",
-        beforeImage: "",
-        afterImage: "",
+        beforeImage: skillbefore,
+        afterImage: skillafter,
         transformationPoints: {
-            before: ["Vague brand identity", "Low quality visuals"],
+            before: [
+                "Inconsistent post designs and color usage",
+                "Product images without clear messaging",
+                "Inconsistent post designs and color usage",
+            ],
             after: [
-                "Professional visual storytelling",
-                "Consistent academic branding",
+                "Consistent brand colors, typography, and layout",
+                "High-quality visuals with clear product highlights",
+                "Improved storytelling that connects products to lifestyle needs",
+                "Engaging captions with strong call to actions",
             ],
         },
         contentSamples: [
@@ -211,11 +227,20 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
             avatar: "/assets/images/user-galaxy.png",
         },
         finalOutcome: "Stronger presence and increased inquiries.",
-        beforeImage: "/assets/images/galaxy-before.png",
-        afterImage: "/assets/images/galaxy-after.png",
+        beforeImage: beforegalaxy,
+        afterImage: aftergalaxy,
         transformationPoints: {
-            before: ["Dull photos", "Low trust"],
-            after: ["Vibrant lifestyle visuals", "High conversion"],
+            before: [
+                "Inconsistent post designs and color usage",
+                "Product images without clear messaging",
+                "Inconsistent post designs and color usage",
+            ],
+            after: [
+                "Consistent brand colors, typography, and layout",
+                "High-quality visuals with clear product highlights",
+                "Improved storytelling that connects products to lifestyle needs",
+                "Engaging captions with strong call to actions",
+            ],
         },
         contentSamples: [
             {
@@ -281,11 +306,20 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
             avatar: "/assets/images/user-amin.png",
         },
         finalOutcome: "Improved patient trust and communication.",
-        beforeImage: "/assets/images/amin-before.png",
-        afterImage: "/assets/images/amin-after.png",
+        beforeImage: aminbefore,
+        afterImage: aminafter,
         transformationPoints: {
-            before: ["Technical jargon"],
-            after: ["Patient-first communication"],
+            before: [
+                "Inconsistent post designs and color usage",
+                "Product images without clear messaging",
+                "Inconsistent post designs and color usage",
+            ],
+            after: [
+                "Consistent brand colors, typography, and layout",
+                "High-quality visuals with clear product highlights",
+                "Improved storytelling that connects products to lifestyle needs",
+                "Engaging captions with strong call to actions",
+            ],
         },
         contentSamples: [
             {
@@ -358,11 +392,20 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
             avatar: "/assets/images/user-beltech.png",
         },
         finalOutcome: "Increased enrollment queries.",
-        beforeImage: "/assets/images/beltech-before.png",
-        afterImage: "/assets/images/beltech-after.png",
+        beforeImage: beforegalaxy,
+        afterImage: linkedinaccount,
         transformationPoints: {
-            before: ["Fragmented brand"],
-            after: ["Clean UI/UX"],
+            before: [
+                "Inconsistent post designs and color usage",
+                "Product images without clear messaging",
+                "Inconsistent post designs and color usage",
+            ],
+            after: [
+                "Consistent brand colors, typography, and layout",
+                "High-quality visuals with clear product highlights",
+                "Improved storytelling that connects products to lifestyle needs",
+                "Engaging captions with strong call to actions",
+            ],
         },
         contentSamples: [
             {
@@ -445,11 +488,20 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         },
         finalOutcome:
             "Safe Furniture built a premium digital presence that matches their physical product quality.",
-        beforeImage: "/assets/images/safe-before.png",
-        afterImage: "/assets/images/safe-after.png",
+        beforeImage: sofibefore,
+        afterImage: sofiafter,
         transformationPoints: {
-            before: ["Generic photos", "Minimal engagement"],
-            after: ["Luxury lifestyle assets", "High inquiry rate"],
+            before: [
+                "Inconsistent post designs and color usage",
+                "Product images without clear messaging",
+                "Inconsistent post designs and color usage",
+            ],
+            after: [
+                "Consistent brand colors, typography, and layout",
+                "High-quality visuals with clear product highlights",
+                "Improved storytelling that connects products to lifestyle needs",
+                "Engaging captions with strong call to actions",
+            ],
         },
         contentSamples: [
             {
@@ -517,11 +569,20 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         },
         finalOutcome:
             "Maki Interior reached new levels of brand awareness and high-intent lead generation.",
-        beforeImage: "/assets/images/maki-before.png",
-        afterImage: "/assets/images/maki-after.png",
+        beforeImage: makibefore,
+        afterImage: makiafter,
         transformationPoints: {
-            before: ["Stagnant traffic", "Low ad ROI"],
-            after: ["Optimized funnel", "High-conversion ads"],
+            before: [
+                "Inconsistent post designs and color usage",
+                "Product images without clear messaging",
+                "Inconsistent post designs and color usage",
+            ],
+            after: [
+                "Consistent brand colors, typography, and layout",
+                "High-quality visuals with clear product highlights",
+                "Improved storytelling that connects products to lifestyle needs",
+                "Engaging captions with strong call to actions",
+            ],
         },
         contentSamples: [
             {
