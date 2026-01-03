@@ -1,11 +1,11 @@
 import { ArrowLeft } from "lucide-react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
 // 1. Define the Interface
 interface HeroChallengesProps {
     companyName: string;
-    logo: string;
+    logo: string | StaticImageData;
     description: string;
     challenges: string[];
     accentColor?: string;
