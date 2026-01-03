@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
+import { ArrowUpRight } from "lucide-react";
 
-// 1. Define the Interface for TypeScript
 interface ContentSampleItem {
     title: string;
     desc: string;
@@ -13,53 +13,48 @@ interface ContentSamplesProps {
     accentColor: string;
 }
 
-// 2. Update the component to accept { contentSamples, accentColor }
 export const ContentSamples = ({
     contentSamples,
     accentColor,
 }: ContentSamplesProps) => {
-    // If no samples are provided for a project, don't render the section
     if (!contentSamples || contentSamples.length === 0) return null;
 
     return (
-        <section className="py-24 px-6 max-w-7xl mx-auto">
-            <h2 className="text-3xl font-black text-[#111827] mb-12">
+        <section className="py-24 px-6 max-w-7xl mx-auto font-poppins">
+            {/* Header: Matches "Services Provided" style */}
+            <h2 className="text-[32px] md:text-[40px] font-black text-[#111827] mb-14 tracking-tight">
                 Content Samples
             </h2>
 
-            <div className="grid md:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
                 {contentSamples.map((item, i) => (
-                    <div key={i} className="group cursor-pointer">
-                        {/* Image Container */}
-                        <div className="relative rounded-[2rem] overflow-hidden shadow-lg mb-6 bg-gray-100 aspect-[16/10] border border-gray-100 transition-transform duration-500 group-hover:scale-[1.02]">
+                    <div key={i} className="flex flex-col group">
+                        {/* Image Container: High Border Radius & Shadow */}
+                        <div className="relative rounded-[2.5rem] overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.04)] mb-8 aspect-[16/10] bg-white border border-gray-100 transition-all duration-500 group-hover:shadow-[0_20px_50px_rgba(0,0,0,0.1)]">
                             <Image
                                 src={item.img}
                                 alt={item.title}
-                              fill
-                                className="object-cover w-full h-full transition-opacity duration-500 group-hover:opacity-90"
-                            />
-                            {/* Dynamic Hover Overlay */}
-                            <div
-                                className="absolute inset-0 opacity-0 group-hover:opacity-10 transition-opacity duration-500"
-                                style={{ backgroundColor: accentColor }}
+                                fill
+                                className="object-cover transition-transform duration-700 group-hover:scale-105"
                             />
                         </div>
 
-                        {/* Title */}
-                        <h4 className="font-extrabold text-xl mb-2 text-gray-900 group-hover:text-gray-700 transition-colors">
-                            {item.title}
-                        </h4>
+                        {/* Text Content */}
+                        <div className="flex flex-col items-start px-2">
+                            <h4 className="text-[22px] font-[900] text-gray-900 mb-3 leading-tight tracking-tight">
+                                {item.title}
+                            </h4>
 
-                        {/* Dynamic Accent Line */}
-                        <div
-                            className="w-8 h-1 rounded-full mb-3 transition-all duration-500 group-hover:w-16"
-                            style={{ backgroundColor: accentColor }}
-                        />
+                            <p className="text-gray-500 text-[15px] leading-relaxed font-medium mb-6 line-clamp-2">
+                                {item.desc}
+                            </p>
 
-                        {/* Description */}
-                        <p className="text-gray-500 text-[15px] leading-relaxed font-medium">
-                            {item.desc}
-                        </p>
+                            {/* Verify Link: Styled exactly like Figma */}
+                            <button className="flex items-center gap-1.5 text-[14px] font-black transition-all hover:opacity-80 text-[#6A0DAD]">
+                                verify
+                                <ArrowUpRight size={18} strokeWidth={3} />
+                            </button>
+                        </div>
                     </div>
                 ))}
             </div>

@@ -12,13 +12,26 @@ import {
     CodeXml,
     TrendingUp,
 } from "lucide-react";
-
+// images import //
 import skillbridgeLogo from "../assets/images/skillbridgenewlogo.png";
 import aminlogo from "../assets/images/aminlogonew.png";
 import galaxylogo from "../assets/images/galaxyfurniture.png";
 import makilogo from "../assets/images/maki.png";
 import safelogo from "../assets/images/sofiFerniture.png";
 import beltechlogo from "../assets/images/beltechlogo.png";
+import websitehomepage from "../assets/images/websitehomepage.png";
+import telegramaccount from "../assets/images/telegramaccount.png";
+import linkedinaccount from "../assets/images/linkedinaccount.png";
+
+import homepageskill from "../assets/images/homepageskill.png";
+import telegramskill from "../assets/images/telegramskill.png";
+import paidaddkill from "../assets/images/paidaddskill.png";
+import amin2 from "../assets/images/amintiktok2.png";
+import amin1 from "../assets/images/amintiktok1.png";
+import galaxyhome from "../assets/images/galaxyhome.png";
+import galaxybrochure from "../assets/images/galaxybrochure.png";
+import galaxymobile from "../assets/images/galaxymobile.png"
+///////////////////
 export interface CaseStudyProps {
     companyName: string;
     logo: string | StaticImageData;
@@ -47,7 +60,7 @@ export interface CaseStudyProps {
     contentSamples: {
         title: string;
         desc: string;
-        img: string;
+        img: string | StaticImageData;
     }[];
     tools: string[]; // This makes it required for all objects
 }
@@ -123,8 +136,18 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
         contentSamples: [
             {
                 title: "Website Homepage",
-                desc: "Unified layouts.",
-                img: "/samples/skill-web.jpg",
+                desc: "Creating a cohesive visual language through unified layouts and colors.",
+                img: homepageskill,
+            },
+            {
+                title: "Telegram Account",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: telegramskill,
+            },
+            {
+                title: "Paid Ad",
+                desc: "Optimizing ad visuals and copy for a seamless transition from click to community.",
+                img: paidaddkill,
             },
         ],
         tools: ["/assets/icons/figma.png", "/assets/icons/nextjs.png"],
@@ -196,9 +219,19 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
         },
         contentSamples: [
             {
-                title: "Social Catalog",
-                desc: "Clean reading experience.",
-                img: "/samples/skill-tele.jpg",
+                title: "Website Homepage",
+                desc: "Creating a cohesive visual language through unified layouts and colors.",
+                img: galaxyhome,
+            },
+            {
+                title: "Marketing Brochure",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: galaxybrochure,
+            },
+            {
+                title: "Mobile App Interface",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: galaxymobile,
             },
         ],
         tools: ["/assets/icons/ps.png", "/assets/icons/ai.png"], // Added missing tools
@@ -256,9 +289,14 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
         },
         contentSamples: [
             {
-                title: "Health Tips",
-                desc: "Easy tips.",
-                img: "/samples/skill-ad.jpg",
+                title: "TikTok video sample",
+                desc: "Creating a rhythmic visual flow that captures attention and builds brand recognition.",
+                img: amin2,
+            },
+            {
+                title: "TikTok video sample",
+                desc: "Creating a rhythmic visual flow that captures attention and builds brand recognition.",
+                img: amin1,
             },
         ],
         tools: ["/assets/icons/ps.png"], // Added missing tools
@@ -328,9 +366,19 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         },
         contentSamples: [
             {
-                title: "LMS Interface",
-                desc: "Clean design.",
-                img: "/samples/skill-web.jpg",
+                title: "Website Homepage",
+                desc: "Creating a cohesive visual language through unified layouts and colors.",
+                img: websitehomepage,
+            },
+            {
+                title: "Telegram Account",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: telegramaccount,
+            },
+            {
+                title: "Linkedin Account",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: linkedinaccount,
             },
         ],
         tools: ["/assets/icons/figma.png", "/assets/icons/nextjs.png"], // Added missing tools
@@ -405,9 +453,19 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         },
         contentSamples: [
             {
-                title: "Product Showcase",
-                desc: "High-fidelity rendering for social catalogs.",
-                img: "/samples/safe-sample.jpg",
+                title: "Website Homepage",
+                desc: "Creating a cohesive visual language through unified layouts and colors.",
+                img: websitehomepage,
+            },
+            {
+                title: "Telegram Account",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: telegramaccount,
+            },
+            {
+                title: "Linkedin Account",
+                desc: "Streamlining our content design for a cleaner, more enjoyable reading experience.",
+                img: linkedinaccount,
             },
         ],
         // Added tools for Safe Furniture
@@ -467,9 +525,9 @@ Eyoha Digitals partnered with Beltech to enhance its digital presence, establish
         },
         contentSamples: [
             {
-                title: "Ad Creative",
-                desc: "Optimized visuals for high-conversion paid social campaigns.",
-                img: "/samples/maki-ad.jpg",
+                title: "Paid Ad",
+                desc: "Optimizing ad visuals and copy for a seamless transition from click to community.",
+                img: paidaddkill,
             },
         ],
         // Added tools for Maki Interior (including Marketing/Ads tools)
