@@ -77,14 +77,14 @@ export const PAGE_DATA: Record<string, CaseStudyProps> = {
                 title: "Visual Content Design",
                 description: "Designing high-quality social media assets.",
                 icon: <TrendingUp />,
-                date: "Oct 2025 - Present",
+                date: "Sep 2025 - Present",
             },
             {
                 title: "Brand building logo and branding",
                 description:
                     "Improved brand consistency across all digital platforms",
                 icon: <Palette />,
-                date: "May 2025 - Present",
+                date: "Sep 2025 - Present",
             },
             {
                 title: "Product Focused Content Development",
@@ -198,9 +198,23 @@ Eyoha Digitals partnered with Amin General Hospital to strengthen its digital pr
         services: [
             {
                 title: "Content Development",
-                description: "Medical expertise.",
-                icon: <Briefcase />,
-                date: "June 2023",
+                description:
+                    "Developed a clear content plan aligned with healthcare communication goals",
+                icon: <CodeXml />,
+                date: "July 2025 -November 2025",
+            },
+            {
+                title: "Engagement Optimization Strategy",
+                description: "Boosted interactions and customer inquiries.",
+                icon: <Users />,
+                date: "July 2025 -November 2025",
+            },
+            {
+                title: "Service-Focused Content Development",
+                description:
+                    "Clearly showcased hospital departments, services, and facilities",
+                icon: <Database />,
+                date: "July 2025 -November 2025",
             },
         ],
         metrics: [{ label: "Community Engagement", value: "200%" }],
