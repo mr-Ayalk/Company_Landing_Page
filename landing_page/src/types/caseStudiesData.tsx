@@ -1,13 +1,13 @@
 import React from "react";
 import { StaticImageData } from "next/image";
 import {
-    Layout,
+    // Layout,
     Palette,
-    Megaphone,
-    Search,
+    // Megaphone,
+    // Search,
     Users,
-    MousePointer2,
-    Briefcase,
+    // MousePointer2,
+    // Briefcase,
     Database,
     CodeXml,
     TrendingUp,
