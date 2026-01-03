@@ -25,7 +25,7 @@ export const FinalOutcome = ({
                         key={i}
                         className="flex flex-col items-center gap-2 group"
                     >
-                        <div className="text-gray-400 group-hover:text-indigo-600 transition-colors">
+                        <div className="text-gray-900 group-hover:text-indigo-600 transition-colors bg-[#E5E7EB] p-2 rounded-md">
                             {/* Now TypeScript knows this is a component with size/strokeWidth */}
                             <ToolIcon size={40} strokeWidth={1.5} />
                         </div>
