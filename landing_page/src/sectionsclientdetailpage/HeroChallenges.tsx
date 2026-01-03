@@ -22,7 +22,7 @@ export const HeroChallenges = (
 ) => (
     <section className="relative py-20 px-6 max-w-7xl mx-auto overflow-hidden">
         <div className="mb-1 pt-6">
-            <Link href="/" className="inline-block">
+            <Link href="/#FeaturedClients" className="inline-block">
                 <button
                     style={{ color: BRAND_RED }}
                     className="flex items-center gap-2 font-bold text-sm mb-2 uppercase tracking-tight"

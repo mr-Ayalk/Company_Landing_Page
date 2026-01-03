@@ -150,7 +150,7 @@ const ClientCard = ({
 
 export default function ClientSection() {
     return (
-        <section className="bg-[#FDFDFD] py-20 px-4 sm:px-6 lg:px-8">
+        <section className="bg-[#FDFDFD] py-20 px-4 sm:px-6 lg:px-8" id="FeaturedClients">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <div className="flex items-center justify-center gap-3 mb-4">
