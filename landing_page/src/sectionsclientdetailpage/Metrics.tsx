@@ -10,7 +10,7 @@ interface MetricsProps {
     accentColor?: string;
 }
 
-export const Metrics = ({ metrics, accentColor = "#610C9E" }: MetricsProps) => {
+export const Metrics = ({ metrics }: MetricsProps) => {
     return (
         <section className="py-24 px-6 max-w-7xl mx-auto font-poppins">
             {/* Header: Matching the "Services Provided" style */}
@@ -25,10 +25,7 @@ export const Metrics = ({ metrics, accentColor = "#610C9E" }: MetricsProps) => {
                         className="flex flex-col items-start" // Left-aligned like Figma
                     >
                         {/* Metric Value: Extremely bold and large */}
-                        <span
-                            style={{ color: accentColor }}
-                            className="text-6xl md:text-5xl font-bold mb-4 tracking-tighter"
-                        >
+                        <span className="text-6xl md:text-5xl font-bold mb-4 tracking-tighter text-[#610C9E]">
                             {m.value}
                         </span>
 
