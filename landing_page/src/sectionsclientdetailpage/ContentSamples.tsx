@@ -1,11 +1,11 @@
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import React from "react";
 import { ArrowUpRight } from "lucide-react";
 
 interface ContentSampleItem {
     title: string;
     desc: string;
-    img: string;
+    img: string | StaticImageData;
 }
 
 interface ContentSamplesProps {
@@ -15,8 +15,8 @@ interface ContentSamplesProps {
 
 export const ContentSamples = ({
     contentSamples,
-    accentColor,
-}: ContentSamplesProps) => {
+}: // accentColor,
+ContentSamplesProps) => {
     if (!contentSamples || contentSamples.length === 0) return null;
 
     return (
