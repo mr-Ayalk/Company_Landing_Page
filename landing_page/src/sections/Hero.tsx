@@ -7,7 +7,6 @@ import arrowatangle from "../assets/images/arrowatangle.png";
 import Image from "next/image";
 
 export default function Hero() {
-    // Shared styles
     const resultsColor = "text-[#FF6600]";
     const purpleCTA = "bg-[#6A0DAD]";
 
@@ -20,7 +19,6 @@ export default function Hero() {
                 backgroundPosition: "center",
             }}
         >
-            {/* Overlay */}
             <div
                 className="absolute inset-0 z-0"
                 style={{
@@ -33,10 +31,7 @@ export default function Hero() {
                 <Navbar />
             </div>
 
-            {/* Content Container */}
             <div className="relative z-10 container mx-auto px-6 lg:px-[52px] flex flex-col justify-start w-full">
-                
-                {/* Heading: Removed fixed width, used max-w-4xl for readability */}
                 <div className="text-white mb-6 max-w-4xl leading-tight">
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-poppins">
                         Strategy. Creativity.{" "}
@@ -44,29 +39,29 @@ export default function Hero() {
                     </h1>
                 </div>
 
-                {/* Subtext */}
                 <p className="text-gray-200 text-lg md:text-xl font-normal mb-10 max-w-[600px]">
                     We help brands thrive in the digital age through tailored,
                     data-driven marketing solutions that deliver measurable
                     growth and lasting impact.
                 </p>
 
-                {/* Buttons: Stack on mobile, side-by-side on sm+ */}
                 <div className="flex flex-col sm:flex-row gap-4 mb-16 items-start sm:items-center">
+                    {/* Primary CTA: Darker purple on hover */}
                     <Link href="#contact" className="w-full sm:w-auto">
                         <button
                             className={`flex items-center justify-center space-x-2 text-white text-base font-semibold px-8 py-4 w-full sm:w-[224px] rounded-lg 
-                                       ${purpleCTA} hover:bg-purple-700 transition duration-200 shadow-xl`}
+                                       ${purpleCTA} hover:bg-[#520a85] transition-all duration-300 shadow-xl active:scale-95`}
                         >
                             <span>Let&apos;s Talk</span>
                             <ArrowRight size={18} />
                         </button>
                     </Link>
 
+                    {/* Updated Secondary CTA: Subtle white-to-transparent hover */}
                     <Link href="#portfolio" className="w-full sm:w-auto">
                         <button
                             className="flex items-center justify-center space-x-2 text-white text-base font-semibold px-8 py-4 w-full sm:w-[224px] rounded-lg 
-                                       border-2 border-white hover:bg-purple-700 hover:border-[#FF6600] transition duration-200"
+                                       border-2 border-white/80 hover:border-white hover:bg-white/10 transition-all duration-300 active:scale-95"
                         >
                             <span>View Our Work</span>
                             <Image
@@ -80,7 +75,6 @@ export default function Hero() {
                     </Link>
                 </div>
 
-                {/* Stats: Improved spacing and wrap for mobile */}
                 <div className="flex flex-wrap gap-8 md:gap-12 lg:gap-16">
                     <StatItem label="Happy Clients" value="10+" />
                     <StatItem label="Success Rate" value="95%" />
@@ -91,7 +85,6 @@ export default function Hero() {
     );
 }
 
-// Sub-component for stats to keep code clean
 function StatItem({ label, value }: { label: string; value: string }) {
     return (
         <div className="flex flex-col items-start">
