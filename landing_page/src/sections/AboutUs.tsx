@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import aboutImage from "../assets/images/aboutpagenew.png";
+import aboutImage from "../assets/images/newLogo.png";
 
 export default function WhoWeAre() {
     const orangeAccent = "text-[#F97316]";
